@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="mainPage.css">
+</head>
+<body>
+	<div class="header1">
+    <!--logo -->
+  <div class="logo">
+  <img src="photos/range.png">
+    </div>
+    <!--end of logo-->
+  
+  <!--search -->
+  <div class="search">
+    <form class="example" action="/action_page.php">
+    <input type="text" placeholder="Search.." name="search">
+     <select name="cars" id="clothe">
+      <option value="shoes">Shoes</option>
+      <option value="Coats">Coats</option>
+      <option value="Sweaters">Sweaters</option>
+      <option value="Sleeves">Sleeves</option>
+    </select>
+  
+    <button type="submit">Go</button>
+    
+  </form>
+  </div>
+  <!--end of search-->
+  
+  <div class="headerSigns">
+    <a href="contact.html">Contact</a>
+    <a href ="Login.html"><img src = "photos/account.jpg"></a>
+    
+  </div>
+  <!--end of headerSigns-->
+  
+    </div>
+    <!--end of header-->
+  
+  
+    <div class="navbar">
+  
+      
+      <!--end of title-->
+   
+      <div class="menu">
+      <ul>
+         <li><h5>CLothing shop</h5></li>
+          <li><a class="home" href="mainPage.html">Home</a></li>
+          <li><a href="mainPage.html#newArrivals">New</a></li>
+          <li>
+              <a href="Men.html">Men&#9662;</a>
+  
+              <ul class="dropdown">
+                  <li><h5>  Clothing </h5></li>
+                  <li><a href="men.html#all">All</a></li>
+                  <li><a href="men.html#pants">Pants</a></li>
+  
+                  <li><a href="men.html#shoesMan">Shoes</a></li>
+                  <li><a href="men.html#sweatersMan">Sweaters</a></li>
+  
+                  <li><a href="men.html#mancoats">Coats</a></li>
+  
+  
+  
+              </ul>
+  
+  
+          </li>
+          <li><a href="women.html">Women&#9662;</a>
+           <ul class="dropdown">
+                  <li><h5>  Clothing </h5></li>
+                  <li><a href="women.html#all">All</a></li>
+                  <li><a href="women.html#pants">Pants</a></li>
+                  <li><a href="women.html#shoes">Shoes</a></li>
+  
+                  <li><a href="women.html#sweaters">Sweaters</a></li>
+                  <li><a href="women.html#coats">Coats</a></li>
+  
+              </ul></li>
+                  <li><a href="items.html" id="shop"><i class="fa fa-shopping-cart"></i></a></li>
+  <li></li>
+      </ul >
+  
+  <a  onclick="clickid()" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+  
+  <img id="off_image" src="photos/menuicon.png"></a>
+  
+  
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header bg-dark">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel"><div class="logo">
+  <img src="photos/range.png">
+    </div></h5>
+      <button onclick="clickid2()" type="button" class="btn-close text-reset bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      
+        <div id="menu">
+    
+  <ol>
+         <li><h5>CLothing shop</h5></li>
+          <li><a class="home" href="mainPage.html">Home</a></li>
+          <li><a href="#newArrivals">New</a></li>
+          <li>
+              <a href="men.html">Men&#9662;</a>
+  
+              <ol class="dropdown">
+                  <li><h5 style="color: green;">  Clothing </h5></li>
+                  <li><a href="men.html#all">All</a></li>
+                  <li><a href="men.html#sweaters">Sweaters</a></li>
+                   <li><a href="men.html#coats">Coats</a></li>
+                   <li><a href="men.html#pants">Pants</a></li>
+                  <li><a href="men.html#Shoes">Shoes</a></li>
+              </ol>
+  
+  
+          </li>
+          <li><a href="#">Women&#9662;</a>
+           <ol class="dropdown">
+                  <li><h5 style="color: green;">  Clothing </h5></li>
+                  <li><a href="women.html#all">All</a></li>
+                  <li><a href="women.html#pants">Pants</a></li>
+                  <li><a href="women.html#shoes">Shoes</a></li>
+  
+                  <li><a href="women.html#sweaters">Sweaters</a></li>
+                  <li><a href="women.html#coats">Coats</a></li>
+  
+              </ol></li>
+                  <li id = "icons"><a href="items.html"><i class="fa fa-shopping-cart"></i></a>
+                     <a href="Login.html"><img src="photos/account.jpg"></a>
+                     <a href="contact.html"><img src="photos/contact.png"></a>
+  
+                    </li>
+  
+      </ol>
+  
+    </div>
+  <!--end of navbar-->
+  
+  </div></div></div></div>
+  
+  
+  
+  
+  
+  <ul id ="clickid" class="breadcrumb">
+    <li><a href="mainPage.html">Home /</a></li>
+    <li><a href="items.html">Men</a></li>
+    <li  style="margin-left: 20%;"><input type="search" >  <button type="submit">Go</button>
+    </li>
+   </ul><br><br>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+<!-- Jumbotron -->
+<div class="login">
+  
+<div class="signin">
+  <img src="photos/user.png" ><br>
+  <h1 >Login</h1>
+  <h3> Email:</h3>
+  <form class="" action="/action_page.php" method="get">
+
+  <input type="email" name="" placeholder="Enter your email">
+ <h3>password: </h3>
+  <input type="password" id="pass" name="password"
+           minlength="8" required/><br><br>
+           <button type="login">Login</button>
+           <p> Don't have account? Then
+  <button class="btn " type="button"style="background-color: white" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+   <strong>Register</strong>
+  </button>
+</form>
+</p>
+<div style="min-height: 120px;">
+  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+    <div class="card card-body" style="width: 100%">
+
+    <form class="" action="/action_page.php" method="get">
+      <br>
+  
+  <input type="email" id="fname" name="fname" placeholder="Name:"><br><br>
+
+  <input type="email" id="lname" name="lname" placeholder="Surname:"><br><br>
+  
+  <input type="email" id="lname" name="lname"  placeholder="Enter your email:"><br><br>
+  <input type="password" name="" placeholder="password" required> <br><br> <input type="password" name="" placeholder="Retype password" required><br> <input type="tel" name="" placeholder="Mobile:"><br>
+  <input type="checkbox" name="">Male  <input type="checkbox" name=""> Female<br>
+  <input type="submit" value="Submit"><br>
+</form>
+    </div>
+  </div>
+</div></h3>
+         </div>
+
+
+</div>
+       
+ 
+<!-- Jumbotron -->
+<div class="footer1">
+  
+  <div class="footershop">
+    <ul>
+      <li><h2>Shop</h2></li>
+    
+       <li><a href="women.html">Women</a></li>
+        <li><a href="men.html">Men</a></li>
+        <li><a href="mainPage.html#newArrivals">New arrivals</a></li>
+    
+    </ul>
+  </div>
+
+
+  <div class="help">
+    <ul>
+      <li><h2>Help</h2></li>
+   
+       <li><a href="Faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Payment</a></li>
+         <li><a href="#">Cancellation</a></li>
+        <li><a href="#">Buying guide</a></li>
+    
+    </ul>
+  </div>
+
+   <div class="Aboutus">
+    <ul>
+           
+     <li><h2>About us</h2></li>
+     
+      <li><a href="#">Our team</a></li>
+       <li><a href="#">Location</a></li>
+    
+    
+    </ul>
+  </div>
+
+<div class="Moreinfo">
+    <ul>
+
+     <li><h2>More info</h2></li>
+   
+
+          <li><input type="email" name=""/></li>
+          <li><button type="subscribe">Subscribe</button></li>
+          <li><img src="photos/socialicons.png" width="158px" height="79px"></li>
+    
+    
+    </ul>
+  </div>
+
+
+</div>
+<h5 style="text-align: center; width: 100%; background-color: ;">© 2021 All rights reserved by Maria </h5>
+
+
+</body>
+</html>

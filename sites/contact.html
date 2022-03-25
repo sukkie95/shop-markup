@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="mainPage.css">
+</head>
+<body>
+  <div class="header1">
+    <!--logo -->
+  <div class="logo">
+  <img src="photos/range.png">
+    </div>
+    <!--end of logo-->
+  
+  <!--search -->
+  <div class="search">
+    <form class="example" action="/action_page.php">
+    <input type="text" placeholder="Search.." name="search">
+     <select name="cars" id="clothe">
+      <option value="shoes">Shoes</option>
+      <option value="Coats">Coats</option>
+      <option value="Sweaters">Sweaters</option>
+      <option value="Sleeves">Sleeves</option>
+    </select>
+  
+    <button type="submit">Go</button>
+    
+  </form>
+  </div>
+  <!--end of search-->
+  
+  <div class="headerSigns">
+    <a href="contact.html">Contact</a>
+    <a href ="Login.html"><img src = "photos/account.jpg"></a>
+    
+  </div>
+  <!--end of headerSigns-->
+  
+    </div>
+    <!--end of header-->
+  
+  
+    <div class="navbar">
+  
+      
+      <!--end of title-->
+   
+      <div class="menu">
+      <ul>
+         <li><h5>CLothing shop</h5></li>
+          <li><a class="home" href="mainPage.html">Home</a></li>
+          <li><a href="mainPage.html#newArrivals">New</a></li>
+          <li>
+              <a href="Men.html">Men&#9662;</a>
+  
+              <ul class="dropdown">
+                  <li><h5>  Clothing </h5></li>
+                  <li><a href="men.html#all">All</a></li>
+                  <li><a href="men.html#pants">Pants</a></li>
+  
+                  <li><a href="men.html#shoesMan">Shoes</a></li>
+                  <li><a href="men.html#sweatersMan">Sweaters</a></li>
+  
+                  <li><a href="men.html#mancoats">Coats</a></li>
+  
+  
+  
+              </ul>
+  
+  
+          </li>
+          <li><a href="women.html">Women&#9662;</a>
+           <ul class="dropdown">
+                  <li><h5>  Clothing </h5></li>
+                  <li><a href="women.html#all">All</a></li>
+                  <li><a href="women.html#pants">Pants</a></li>
+                  <li><a href="women.html#shoes">Shoes</a></li>
+  
+                  <li><a href="women.html#sweaters">Sweaters</a></li>
+                  <li><a href="women.html#coats">Coats</a></li>
+  
+              </ul></li>
+                  <li><a href="items.html" id="shop"><i class="fa fa-shopping-cart"></i></a></li>
+  <li></li>
+      </ul >
+  
+  <a  onclick="clickid()" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+  
+  <img id="off_image" src="photos/menuicon.png"></a>
+  
+  
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header bg-dark">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel"><div class="logo">
+  <img src="photos/range.png">
+    </div></h5>
+      <button onclick="clickid2()" type="button" class="btn-close text-reset bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      
+        <div id="menu">
+    
+  <ol>
+         <li><h5>CLothing shop</h5></li>
+          <li><a class="home" href="mainPage.html">Home</a></li>
+          <li><a href="mainPage.html#newArrivals">New</a></li>
+          <li>
+              <a href="men.html">Men&#9662;</a>
+  
+              <ol class="dropdown">
+                  <li><h5 style="color: green;">  Clothing </h5></li>
+                  <li><a href="men.html#sweaters">All</a></li>
+                  <li><a href="men.html#sweaters">Sweaters</a></li>
+                   <li><a href="men.html#coats">Coats</a></li>
+                   <li><a href="men.html#pants">Pants</a></li>
+                  <li><a href="men.html#Shoes">Shoes</a></li>
+              </ol>
+  
+  
+          </li>
+          <li><a href="#">Women&#9662;</a>
+           <ol class="dropdown">
+                  <li><h5 style="color: green;">  Clothing </h5></li>
+                  <li><a href="women.html#all">All</a></li>
+                  <li><a href="women.html#pants">Pants</a></li>
+                  <li><a href="women.html#shoes">Shoes</a></li>
+  
+                  <li><a href="women.html#sweaters">Sweaters</a></li>
+                  <li><a href="women.html#coats">Coats</a></li>
+  
+              </ol></li>
+                  <li id = "icons"><a href="items.html"><i class="fa fa-shopping-cart"></i></a>
+                     <a href="Login.html"><img src="photos/account.jpg"></a>
+                     <a href="contact.html"><img src="photos/contact.png"></a>
+  
+                    </li>
+  
+      </ol>
+  
+    </div>
+  <!--end of navbar-->
+  
+  </div></div></div></div>
+  
+  
+  
+  <ul id ="clickid" class="breadcrumb">
+    <li><a href="mainPage.html">Home /</a></li>
+    <li><a href="items.html">Men</a></li>
+    <li  style="margin-left: 20%;"><input type="search" >  <button type="submit">Go</button>
+    </li>
+   </ul><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+
+<div
+    id="intro-example"
+    class="p-5 text-center bg-image"
+    style="background-image: url('photos/contact.jpg');"
+  >
+    <div class="mask" >
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <h1 class="mb-3">Fast contact</h1>
+        
+          <a
+            class="btn bg-success btn-outline-light btn-lg m-2"
+            href="tel:555-555-5555"
+            role="button"
+            rel="nofollow"
+            target="_blank"
+            >Call Now</a
+          >
+          <a
+            class="btn btn-outline-light btn-lg m-2"
+            href="https://mdbootstrap.com/docs/standard/"
+            target="_blank"
+            role="button"
+            >Online Chat</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+<br>
+
+
+  <div class="contact">
+<div class="map" >
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5566.4284976957415!2d-83.45812402201442!3d33.945804041215915!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x67c84e25080a07d8!2sGeorgia%20Square%20Mall!5e0!3m2!1sit!2sge!4v1631624578927!5m2!1sit!2sge"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+<div class="contact_form" id="contact_form">
+  <form action="/action_page.php" method="get" > 
+    <label for="fname" >Your name:</label><br>
+    <input type="text" id="fname" name="fname" style="width: 80%"><br><br>
+    <label for="lname">Your Email:</label><br>
+    <input type="text" style="width: 80%" id="lname" name="lname"><br><br>
+    <label for="lname">Subject:</label><br>
+    <input type="text" style="width: 80%; height: 200px;" id="lname" name="lname"><br><br>
+    <input type="submit" value="Send Message">
+  </form>
+  
+</div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <br><br><br>
+
+
+
+<!-- Footer -->
+<div class="footer1">
+  
+  <div class="footershop">
+    <ul>
+      <li><h2>Shop</h2></li>
+    
+       <li><a href="women.html">Women</a></li>
+        <li><a href="men.html">Men</a></li>
+        <li><a href="mainPage.html#newArrivals">New arrivals</a></li>
+    
+    </ul>
+  </div>
+
+
+  <div class="help">
+    <ul>
+      <li><h2>Help</h2></li>
+   
+       <li><a href="Faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Payment</a></li>
+         <li><a href="#">Cancellation</a></li>
+        <li><a href="#">Buying guide</a></li>
+    
+    </ul>
+  </div>
+
+   <div class="Aboutus">
+    <ul>
+           
+     <li><h2>About us</h2></li>
+     
+      <li><a href="#">Our team</a></li>
+       <li><a href="#">Location</a></li>
+    
+    
+    </ul>
+  </div>
+
+<div class="Moreinfo">
+    <ul>
+
+     <li><h2>More info</h2></li>
+   
+
+          <li><input type="email" name=""/></li>
+          <li><button type="subscribe">Subscribe</button></li>
+          <li><a href="https://www.facebook.com/mari.moseshvili2/"><img src="photos/socialicons.png" width="158px" height="79px"></a></li>
+    
+    
+    </ul>
+  </div>
+
+
+</div>
+<h5 style="text-align: center; width: 100%; background-color: ;">© 2021 All rights reserved by Maria </h5>
+
+</body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  
+	<title>Main page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="main.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="mainPage.css">
+</head>
+<body>
+
+	<div class="header1">
+	<!--logo -->
+<div class="logo">
+<img src="photos/range.png">
+	</div>
+	<!--end of logo-->
+
+<!--search -->
+<div class="search">
+	<form class="example" action="/action_page.php">
+  <input type="text" placeholder="Search.." name="search">
+   <select name="cars" id="clothe">
+    <option value="shoes">Shoes</option>
+    <option value="Coats">Coats</option>
+    <option value="Sweaters">Sweaters</option>
+    <option value="Sleeves">Sleeves</option>
+  </select>
+
+  <button type="submit">Go</button>
+  
+</form>
+</div>
+<!--end of search-->
+
+<div class="headerSigns">
+	<a href="contact.html">Contact</a>
+	<a href ="Login.html"><img src = "photos/account.jpg"></a>
+	
+</div>
+<!--end of headerSigns-->
+
+	</div>
+	<!--end of header-->
+
+
+	<div class="navbar">
+
+		
+		<!--end of title-->
+ 
+		<div class="menu">
+		<ul>
+			 <li><h5>CLothing shop</h5></li>
+        <li><a class="home" href="mainPage.html">Home</a></li>
+        <li><a href="mainPage.html#newArrivals">New</a></li>
+        <li>
+            <a href="Men.html">Men&#9662;</a>
+
+            <ul class="dropdown">
+                <li><h5>  Clothing </h5></li>
+                <li><a href="men.html#all">All</a></li>
+                <li><a href="men.html#pants">Pants</a></li>
+
+                <li><a href="men.html#shoesMan">Shoes</a></li>
+                <li><a href="men.html#sweatersMan">Sweaters</a></li>
+
+                <li><a href="men.html#mancoats">Coats</a></li>
+
+
+
+            </ul>
+
+
+        </li>
+        <li><a href="women.html">Women&#9662;</a>
+         <ul class="dropdown">
+                <li><h5>  Clothing </h5></li>
+                <li><a href="women.html#all">All</a></li>
+                <li><a href="women.html#pants">Pants</a></li>
+                <li><a href="women.html#shoes">Shoes</a></li>
+
+                <li><a href="women.html#sweaters">Sweaters</a></li>
+                <li><a href="women.html#coats">Coats</a></li>
+
+            </ul></li>
+                <li><a href="items.html" id="shop"><i class="fa fa-shopping-cart"></i></a></li>
+<li></li>
+    </ul >
+
+<a  onclick="clickid()" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+
+<img id="off_image" src="photos/menuicon.png"></a>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header bg-dark">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel"><div class="logo">
+<img src="photos/range.png">
+  </div></h5>
+    <button onclick="clickid2()" type="button" class="btn-close text-reset bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    
+      <div id="menu">
+  
+<ol>
+       <li><h5>CLothing shop</h5></li>
+        <li><a class="home" href="mainPage.html">Home</a></li>
+        <li><a href="mainPage.html#newArrivals">New</a></li>
+        <li>
+            <a href="men.html">Men&#9662;</a>
+
+            <ol class="dropdown">
+                <li><h5 style="color: green;">  Clothing </h5></li>
+                <li><a href="men.html#sweaters">All</a></li>
+                <li><a href="men.html#sweaters">Sweaters</a></li>
+                 <li><a href="men.html#coats">Coats</a></li>
+                 <li><a href="men.html#pants">Pants</a></li>
+                <li><a href="men.html#Shoes">Shoes</a></li>
+            </ol>
+
+
+        </li>
+        <li><a href="#">Women&#9662;</a>
+         <ol class="dropdown">
+                <li><h5 style="color: green;">  Clothing </h5></li>
+                <li><a href="women.html#all">All</a></li>
+                <li><a href="women.html#pants">Pants</a></li>
+                <li><a href="women.html#shoes">Shoes</a></li>
+
+                <li><a href="women.html#sweaters">Sweaters</a></li>
+                <li><a href="women.html#coats">Coats</a></li>
+
+            </ol></li>
+                <li id = "icons"><a href="items.html"><i class="fa fa-shopping-cart"></i></a>
+                   <a href="#"><img src="photos/account.jpg"></a>
+                   <a href="#"><img src="photos/contact.png"></a>
+
+                  </li>
+
+    </ol>
+
+	</div>
+<!--end of navbar-->
+
+</div></div></div></div>
+
+<!--breadcrumb -->
+
+
+<ul  id ="clickid" class="breadcrumb">
+  <li><a href="mainPage.html">Home </a></li>
+  
+  <li  style="margin-left: 20%;"><input type="search" >  <button type="submit">Go</button>
+  </li>
+ </ul><br><br>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<!--slider-->
+<h1 id="slide_title" style="text-align: center; color: red; font-family: Georgia, 'Times New Roman', Times, serif;">Choose Any Item From Sale's Board</h1>
+<br><div class="slider bg-dark">
+  <div class="slider_img">
+    <h1 id="change_price" style="position: absolute; color: red; top: -10">25$</h1>
+    <img id="change_img"  src="photos/pinkdress.jpeg">
+  </div>
+  <div class="slider_text">
+    <h1>Hot Sale Just Now!</h1>
+    <img  src="photos/fire.png"><br><br>
+    <button type="shopp"><h2><a id="Product_link" href="description.html" onclick="change_product()" >Buy Now</a></h2></button><br><br><br>
+
+<button class="circle" id="circle1" onclick="changes1()"></button> 
+  <button class="circle" id="circle2" onclick="changes2()"></button> 
+  <button class="circle" id="circle3"onclick="changes3()"></button>
+  </div>
+</div>
+
+
+<br>
+
+<hr style="width: 100%"><br>
+
+
+
+
+<!--end of slider-->
+
+<div class="pink" id="newArrivals">
+	<h1>New arrivals for all</h1><br>
+	<div class="buttons">
+		<button onclick="arrivals_women()" type="new">Women</button> 
+    <button onclick="arrivals_men()" type="new">Men</button> <button type="new">Sale</button>
+	</div>
+
+
+	
+</div>
+
+<br><br>
+<div class="selectList">
+	<select type="select" name="clothe" id="clothe">
+    <option value="shoe">Shoes</option>
+    <option value="coat">Coats</option>
+    <option value="sweater">Sweaters</option>
+    <option value="pant">Pants</option>
+  </select></div>
+
+
+
+
+<br><br>
+
+<!--Start of arrival Products-->
+
+
+<div class="pictures" >
+  
+  <figure>
+    <p><a href="items.html"><button id="green"><i class="fa fa-shopping-cart"></i></button><a href="description.html"><button id="green"> <i class="fa fa-eye" aria-hidden="true"></i></button></a>
+    </p>
+ <img id ="arr_1" src="photos/sweater1.jpg" alt="Trulli" style="width:100%">
+  <figcaption><h5  id ="arr_text1"> Woman's White sweater </h5>
+    <h4 > 30$</h4>
+
+  </figcaption>
+</figure>
+
+
+<figure>
+
+  <p><a href="items.html"><button><i class="fa fa-shopping-cart"></i></button><a href="description.html"><button><i class="fa fa-eye" aria-hidden="true"></i></button></a>
+  </p>
+
+     <a href="description.html"><img id ="arr_2" src="photos/sweater2.jpg" alt="Trulli" style="width:100%"></a>
+  <figcaption><h5 id ="arr_text2"> Woman's brown sweater  </h5></figcaption>
+  <h4 > 30$</h4>
+</figure>
+
+<figure>
+  <p><a href="items.html"><button><i class="fa fa-shopping-cart"></i></button><a href="description.html"><button><i class="fa fa-eye" aria-hidden="true"></i></button></a>
+  </p>
+
+     <a href="description.html"><img id ="arr_3" src="photos/coat.jpg" alt="Trulli" style="width:100%"></a>
+  <figcaption><h5 id ="arr_text3">  Woman's gray sleeve </h5>
+    <h4 > 30$</h4>
+</figcaption></figure>
+
+
+<figure>
+  <p><a href="items.html"><button><i class="fa fa-shopping-cart"></i></button><a href="description.html"><button><i class="fa fa-eye" aria-hidden="true"></i></button></a>
+  </p>
+     <a href="description.html"> <img id ="arr_4" src="photos/pants.jpg" alt="Trulli" style="width:100%"></a>
+  <figcaption><h5 id ="arr_text4">Woman's brown coat </h5>
+    <h4 > 30$</h4>
+
+  </figcaption></figure>
+
+
+<figure>
+  <p><a href="items.html"><button><i class="fa fa-shopping-cart"></i></button><a href="description.html"><button><i class="fa fa-eye" aria-hidden="true"></i></button></a>
+  </p>
+     <a href="description.html"> <img id ="arr_5" src="photos/coat2.jpg" alt="Trulli" style="width:100%"></a>
+  <figcaption><h5 id ="arr_text5"> Woman's dark gray pants</h5>  <h4 > 30$</h4>
+
+  </figcaption></figure>
+
+
+<figure>
+  <p><a href="items.html"><button><i class="fa fa-shopping-cart"></i></button><a href="description.html"><button><i class="fa fa-eye" aria-hidden="true"></i></button></a>
+  </p>
+     <a href="description.html">  <img id ="arr_6" src="photos/sleeve.jpeg" alt="Trulli" style="width:100%"></a>
+  <figcaption><h5 id ="arr_text6"> Woman's dark green jacket </h5>  <h4 > 30$</h4>
+  </figcaption></figure>
+</div>
+
+
+
+
+ <div class="seeMore"> <a href="">See more</a></div>
+   <!--end of Arrival Products-->
+
+
+ <br><hr style="width: 100%"><br>
+
+
+
+ 
+
+
+
+ <div class="pink" id="newArrivals">
+	<h1>Shoes</h1><br>
+	<div class="buttons">
+    <button id="womenshoe" onclick="changeImage()"  type="new">Women</button> <button type="new"  onclick="changeImage2()" >Men</button> <button type="new">Sale</button>
+	</div>
+
+</div>
+
+  
+
+
+<!--Shoes section-->
+   
+
+        <div class="shoes">
+      
+
+          <figure>
+           
+            
+            <p><a href="items.html"><button><i class="fa fa-shopping-cart"></i></button><a href="description.html"><button><i class="fa fa-eye" aria-hidden="true"></i></button></a>
+            </p>
+           
+            <a href="description.html"> <img id="shoe1" src="photos/shoe1.jpg" alt="Trulli" style="width:100%"></a>
+   
+        <figcaption><h5> Unisex sneakers</h5></figcaption>
+        <h4 > 30$</h4>
+</figure>
+<figure>
+  <p><a href="items.html"><button><i class="fa fa-shopping-cart"></i></button><a href="description.html"><button><i class="fa fa-eye" aria-hidden="true"></i></button></a>
+  </p>
+      <a href="description.html"> <img id="shoe2" src="photos/shoe2.jpg" alt="Trulli" style="width:100%"></a>
+  <figcaption><h5> Unisex sneakers</h5>  <h4 > 30$</h4>
+  </figcaption></figure>
+
+<figure>
+  
+  <p><a href="items.html"><button><i class="fa fa-shopping-cart"></i></button><a href="description.html"><button><i class="fa fa-eye" aria-hidden="true"></i></button></a>
+  </p>
+       <a href="description.html"> <img id="shoe3" src="photos/shoe3.jpg" alt="Trulli" style="width:100%"></a>
+  <figcaption><h5> gray sleeve</h5>
+    <h4 > 30$</h4>
+</figcaption></figure>
+
+<figure>
+  
+  <p><a href="items.html"><button><i class="fa fa-shopping-cart"></i></button><a href="description.html"><button><i class="fa fa-eye" aria-hidden="true"></i></button></a>
+  </p>
+       <a href="description.html"> <img id="shoe3" src="photos/womanshoe4.jpg" alt="Trulli" style="width:100%"></a>
+  <figcaption><h5> gray sleeve</h5>
+    <h4 > 30$</h4>
+</figcaption></figure>
+
+        </div><br><br>
+
+        <!--End of shoes-->
+
+
+ 
+ <div  class="seeMore"> <a id="seeMore" href="#">See more</a></div>
+ <hr style="width: 100%"><br>
+ 
+  <div class="credit"><h3>Payment By</h3><img src="photos/credit.png"></div>
+
+<!--start of footer-->
+   <div class="footer1">
+  
+       <div class="footershop">
+         <ul>
+           <li><h2>Shop</h2></li>
+         
+            <li><a href="women.html">Women</a></li>
+             <li><a href="men.html">Men</a></li>
+             <li><a href="mainPage.html#newArrivals">New arrivals</a></li>
+         
+         </ul>
+       </div>
+
+
+       <div class="help">
+         <ul>
+           <li><h2>Help</h2></li>
+        
+            <li><a href="Faq.html">FAQ</a></li>
+             <li><a href="contact.html">Contact</a></li>
+             <li><a href="#">Payment</a></li>
+              <li><a href="#">Cancellation</a></li>
+             <li><a href="#">Buying guide</a></li>
+         
+         </ul>
+       </div>
+
+        <div class="Aboutus">
+         <ul>
+                
+          <li><h2>About us</h2></li>
+          
+           <li><a href="#">Our team</a></li>
+            <li><a href="#">Location</a></li>
+         
+         
+         </ul>
+       </div>
+
+ <div class="Moreinfo">
+         <ul>
+
+          <li><h2 id="more">More info</h2></li>
+        
+
+               <li><input type="email" name=""/></li>
+               <li id="cent"><button type="subscribe">Subscribe</button></li>
+               <li><a href="https://www.facebook.com/mari.moseshvili2/"><img src="photos/socialicons.png" width="158px" height="79px"></a></li>
+         
+         
+         </ul>
+       </div>
+
+
+     </div>
+<h5 style="text-align: center; width: 100%; background-color: ;">© 2021 All rights reserved by Maria </h5>
+
+
+<!--End of footer-->
+    
+</body>
+</html>
